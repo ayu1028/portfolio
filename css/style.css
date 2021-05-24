@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  /*  font-family: 'Dancing Script', cursive;*/
+  background-color: #FFFDFA;
+  color: #6A6A6A;
+}
+/* 共通のCSS */
+.container {
+  width: 84%;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__head {
+  font-size: 24px;
+  font-weight: normal;
+  padding-bottom: 8px;
+  margin-bottom: 40px;
+  border-bottom: solid 2px #6A6A6A;
+}
+
+.btn, .btn__dark {
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn__dark {
+  opacity: 0.5;
+}
+
+.btn__dark:hover {
+  opacity: 1;
+}
+
+/* hero start */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  height: 600px;
+  color: #fff;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.3)), 
+                    url(../img/icon/DSC_0042_5_fixed.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.hero__catch {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 200;
+  font-size: 29px;
+  padding: 0 30px;
+}
+
+.nav ul {
+  display: flex;
+  font-size: 13px;
+}
+
+.nav li + li {
+  margin-left: 20px;
+}
+/* hero end */
+/* about start */
+.about__contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__text {
+  margin-top: 25px;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+/* about end */
+
+/* services start */
+.services__contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.services__text {
+  font-size: 13px;
+  line-height: 25px;
+}
+
+.services__content__head {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 30px 0;
+}
+
+/* services end */
+
+/* works start */
+.works p {
+  font-size: 13px;
+  text-align: center;
+}
+
+.works__contents {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works article {
+  flex: 1 1 300px;
+  min-width: 300px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.works .photo {
+  height: 200px;
+  width: 280px;
+  background-size: cover;
+  border: solid 1px #6A6A6A;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+}
+
+/* works end */
+
+/* contact start */
+.contact p {
+  font-size: 13px;
+  text-align: center;
+}
+
+.contact__sns {
+  margin-top: 40px;
+}
+
+.contact__sns .sns {
+  width: 50px;
+  height: 50px;
+}
+
+.contact__sns ul {
+  display: flex;
+}
+
+.contact__sns ul li+li {
+  margin-left: 40px;
+}
+
+/* contact end */
+
+/* footer start */
+footer {
+  margin-top: 35px;
+  background-color: #AAA1B3;
+  color: #fff;
+}
+
+.footer__text {
+  font-size: 13px;
+  margin: 40px 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+    max-width: 1000px;
+  }
+
+  /* hero start */
+  .hero__name, .hero__catch {
+    font-size: 50px;
+  }
+
+  .nav ul {
+    font-size: 24px;
+  }
+
+  .nav li + li {
+    margin-left: 100px;
+  }
+  /* hero end */
+
+  /* about start */
+  .about__contents {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about__text {
+    margin: 0 40px;
+  }
+
+  /* about end */
+
+  /* services start */
+  .services__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .services__contents {
+    padding: 0 20px;
+    flex: 1;
+  }
+
+  /* services end */
+}
