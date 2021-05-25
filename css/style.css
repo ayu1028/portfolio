@@ -34,8 +34,18 @@ body {
   border-bottom: solid 2px #6A6A6A;
 }
 
-.btn, .btn__dark {
+.btn, .btn__dark, .nav__link {
   transition: 0.3s;
+}
+
+.nav__link {
+  display: block;
+  padding: 5px;
+  border-bottom: solid 2px rgba(255,255,255,0) ;
+}
+
+.nav__link:hover {
+  border-bottom: solid 2px rgba(255,255,255,1) ;
 }
 
 .btn:hover {
@@ -74,7 +84,7 @@ body {
 .hero__catch {
   font-family: 'Noto Serif JP', serif;
   font-weight: 200;
-  font-size: 29px;
+  font-size: 30px;
   padding: 0 30px;
 }
 
