@@ -46,22 +46,14 @@ for (var i = 0; i < links.length; i++) {
 
 // アートのリスト(手作業で更新)
 const art_list = [
-                  '1.jpeg',
-                  '2.jpeg',
-                  '3.jpeg',
-                  '4.jpeg',
-                  '5.jpeg',
-                  '6.jpeg',
-                  '7.jpeg',
-                  '8.jpeg',
-                  '9.jpeg',
-                  '10.jpeg',
-                  '11.jpeg',
-                  '12.jpeg',
-                  '13.jpeg',
-                  '14.jpeg',
-                  '15.jpeg',
-                  '16.jpeg',
+                   '1.jpeg', '2.jpeg', '3.jpeg', '4.jpeg', '5.jpeg',
+                   '6.jpeg', '7.jpeg', '8.jpeg', '9.jpeg','10.jpeg',
+                  '11.jpeg','12.jpeg','13.jpeg','14.jpeg','15.jpeg',
+                  '16.jpeg','17.jpeg','18.jpeg','19.jpeg','20.jpeg',
+                  '21.jpeg','22.jpeg','23.jpeg','24.jpeg','25.jpeg',
+                  '26.jpeg','27.jpeg','28.jpeg','29.jpeg','30.jpeg',
+                  '31.jpeg','32.jpeg','33.jpeg','34.jpeg','35.jpeg',
+                  '36.jpeg','37.jpeg','38.jpeg',
                   ]
 
 // idが"load__btn"の要素を取得する
@@ -76,7 +68,6 @@ loadBtn.addEventListener("click", function() {
   let articleCount = worksContents.getElementsByTagName("article").length;
 
   // articleタグの数をコンソールに出力する
-  console.log(articleCount);
 
   // 9個の要素を追加するためのループを回す
   for (let i = 0; i < 9; i++) {
@@ -97,6 +88,12 @@ loadBtn.addEventListener("click", function() {
 
     // worksContentsにnewArticleを追加する
     worksContents.appendChild(newArticle);
+  }
+
+  var links = document.getElementsByClassName("my-link");
+  // リンク要素にクリックイベントのリスナーを追加
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", changeBackgroundImage);
   }
   });
 
