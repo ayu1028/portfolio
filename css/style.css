@@ -10,17 +10,37 @@ a {
   text-decoration: none;
 }
 
+.link {
+  color: #0091ff;
+}
+
+.link:hover {
+  background-color: #a2e0ff;
+}
+
+.link__user:hover {
+  opacity: 0.5;
+
+}
+
+.user {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
 body {
   font-family: "Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
   /*  font-family: 'Dancing Script', cursive;*/
   background-color: #FFFDFA;
   color: #6A6A6A;
+  position: relative;
 }
 /* 共通のCSS */
 .container {
   width: 84%;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,11 +50,11 @@ body {
   font-size: 24px;
   font-weight: normal;
   padding-bottom: 8px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   border-bottom: solid 2px #6A6A6A;
 }
 
-.btn, .btn__dark, .nav__link {
+.btn, .btn__dark, .nav__link, .link__user {
   transition: 0.3s;
 }
 
@@ -66,11 +86,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
-  height: 600px;
+  padding: 50px 50px;
+  /* height: 200px; */
+  background-color: #004d73;
   color: #fff;
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.3)), 
-                    url(../img/icon/DSC_0042_5_fixed.png);
+  /* background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.3)), 
+                    url(../img/icon/DSC_0042_5_fixed.png); */
   background-size: cover;
   background-position: center;
 }
@@ -78,7 +99,7 @@ body {
 .hero__name {
   font-family: 'Dancing Script', cursive;
   font-size: 25px;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 .hero__catch {
@@ -171,7 +192,8 @@ body {
 }
 
 .contact__sns {
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .contact__sns .sns {
@@ -191,14 +213,57 @@ body {
 
 /* footer start */
 footer {
-  margin-top: 35px;
+  margin-top: 10px;
   background-color: #AAA1B3;
   color: #fff;
 }
 
 .footer__text {
   font-size: 13px;
-  margin: 40px 0;
+  margin: 20px 0;
+}
+
+.loadmore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.load__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 150px;
+  border-radius: 15px;
+  background-color: #6A6A6A;
+  color: #fff;
+}
+
+.load__btn:hover {
+  
+}
+
+#modal {
+  display: flex;
+  visibility: hidden;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.photo__large {
+  background-size: cover;
+  width: 80%;
+  aspect-ratio: 1/1;
 }
 
 @media (min-width: 768px) {
@@ -245,4 +310,11 @@ footer {
   }
 
   /* services end */
+
+  .photo__large {
+    background-size: cover;
+    width: 60%;
+    aspect-ratio: 1/1;
+  }
 }
+
