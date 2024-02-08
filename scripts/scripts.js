@@ -53,7 +53,9 @@ const art_list = [
                   '21.jpeg','22.jpeg','23.jpeg','24.jpeg','25.jpeg',
                   '26.jpeg','27.jpeg','28.jpeg','29.jpeg','30.jpeg',
                   '31.jpeg','32.jpeg','33.jpeg','34.jpeg','35.jpeg',
-                  '36.jpeg','37.jpeg','38.jpeg',
+                  '36.jpeg','37.jpeg','38.jpeg','39.jpeg','40.jpeg',
+                  '41.jpeg','42.jpeg','43.jpeg','44.jpeg','45.jpeg',
+                  '46.jpeg','47.jpeg',
                   ]
 
 // idが"load__btn"の要素を取得する
